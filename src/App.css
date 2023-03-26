@@ -1,0 +1,33 @@
+.container {
+  width: 100%;
+  margin: auto;
+}
+.home-page {
+  background: #12001c;
+  padding: 1rem 2rem;
+  min-height: 95vh;
+}
+.home-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: #ecebf3;
+  margin: 2rem 0;
+}
+.scale:hover {
+  cursor: pointer;
+  scale: 1.1;
+  transition: 0.5s ease-in-out;
+}
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+.grid-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
