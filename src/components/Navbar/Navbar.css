@@ -32,7 +32,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 5%;
+  padding: 0.5rem 2rem;
 }
 .nav-list {
   list-style: none;
@@ -54,3 +54,37 @@
   color: #ecebf3;
   text-decoration: none;
 }
+@media screen and (max-width: 850px) {
+  .navbar {
+    padding: 0 1rem;
+  }
+  .nav-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-elements {
+    padding: 0.5rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .navbar {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 370px) {
+  .header-title {
+    font-size: 1.5rem;
+  }
+  .nav-section {
+    padding: 0.5rem;
+  }
+  .navbar {
+    padding: 0 0.3rem;
+  }
+  .nav-elements {
+    font-size: 0.8rem;
+  }
+}
+  
