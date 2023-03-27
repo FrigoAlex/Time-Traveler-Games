@@ -1,0 +1,74 @@
+.set-player {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+.turn-text {
+  margin-right: 8px;
+}
+.player-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: contain;
+}
+.result-message-container {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+.result-message {
+    display: flex;
+}
+.result-text {
+    margin-right: 8px;
+}
+.grid3x3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 0.5rem;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 30rem;
+  padding: 1rem;
+}
+.cell {
+  color: #fff;
+  width: 150px;
+  height: 150px;
+  border: 2px solid #fff;
+  display: grid;
+  align-content: center;
+}
+.cell:nth-child(3n+1) {
+    border-left: none;
+}
+.cell:nth-child(3n) {
+    border-right: none;
+}
+.cell:nth-child(-n+3) {
+    border-top: none;
+}
+.cell:nth-child(n+7) {
+    border-bottom: none;
+}
+.game-icon {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    object-fit: contain;
+    object-position: center;
+}
+
