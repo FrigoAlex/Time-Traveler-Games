@@ -1,0 +1,27 @@
+.home-content {
+  color: #ecebf3;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.game-container {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.game-title {
+  font-size: 2rem;
+  text-align: center;
+  color: #ecebf3;
+  margin: 1.2rem 0;
+}
+.game-img {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  object-fit: contain;
+  object-position: center;
+}
