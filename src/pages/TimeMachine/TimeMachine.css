@@ -90,3 +90,52 @@
 .game-button:hover {
     filter: drop-shadow(0 0 0.1rem #fff);
 }
+.game-button:active {
+    filter: drop-shadow(0 0 0.1rem #fff);
+    transform: scale(0.95);
+}
+.game-button:disabled {
+    background: #ecebf3;
+    color: #34004f;
+    cursor: not-allowed;
+}
+@media screen and (max-width: 875px) {
+    .grid-elements {
+        width: 100px;
+        height: 100px;
+    }
+}
+@media screen and (max-width: 670px) {
+    .grid-elements {
+        width: 80px;
+        height: 80px;
+    }
+    .grid-container {
+        gap: 0 !important;
+    }
+    .grid4x4 {
+        grid-gap: 0.5rem;
+    }
+    .game-button {
+        padding: 0.5rem 0.8rem;
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 540px) {
+    .home-page {
+        padding: 0.5rem 1rem !important;
+    }
+    .menu {
+        display: flex;
+        flex-direction: row;
+    }    
+    .game-button {
+        margin: 0 0.5rem;
+    }
+}
+@media screen and (max-width: 380px) {
+    .grid-elements {
+        width: 55px;
+        height: 55px;
+    }
+}
