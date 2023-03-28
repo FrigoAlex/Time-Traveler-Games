@@ -39,9 +39,6 @@
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 0.5rem;
   text-align: center;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 30rem;
   padding: 1rem;
 }
 .cell {
@@ -71,4 +68,15 @@
     object-fit: contain;
     object-position: center;
 }
-
+@media screen and (max-width: 710px) {
+  .cell {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 352px) {
+  .cell {
+    width: 70px;
+    height: 70px;
+  }
+}
