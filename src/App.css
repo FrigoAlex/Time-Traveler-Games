@@ -19,16 +19,63 @@
   scale: 1.1;
   transition: 0.5s ease-in-out;
 }
-@media screen and (max-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
 .grid-container {
   display: flex;
   gap: 1rem;
   justify-content: center;
   align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
+}
+.game-button {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background: #34004f;
+  color: #ecebf3;
+  border: none;
+  border-radius: 10px;
+  padding: 0.7rem 1.1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 1rem 0;
+  transition: 0.3s ease-in-out;
+}
+.game-button:hover {
+  filter: drop-shadow(0 0 0.1rem #fff);
+}
+.game-button:active {
+  filter: drop-shadow(0 0 0.1rem #fff);
+  transform: scale(0.95);
+}
+.game-button:disabled {
+  background: #ecebf3;
+  color: #34004f;
+  cursor: not-allowed;
+}
+@media screen and (max-width: 670px) {
+  .game-button {
+    padding: 0.5rem 0.8rem;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .home-page {
+      padding: 0.5rem 1rem !important;
+  }
+  .menu {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+  }    
+  .game-button {
+      margin: 0.5rem;
+      width: 5rem;
+  }
 }
