@@ -6,9 +6,9 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <header className="navbar">
-      <div className="logo-container">
+      <Link to={PageRoutes.HOME} className="logo-container">
         <h1 className="header-title">Time Traveler Games</h1>
-      </div>
+      </Link>
       <nav className="nav-section">
         <ul className="nav-list">
           <li className="nav-elements">
