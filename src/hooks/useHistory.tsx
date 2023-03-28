@@ -28,7 +28,14 @@ function useHistory<Type>(state: Type) {
     setHistory([]);
   };
   const length = history.length;
-  return { getPreviousValue, PreviousValue, removeItem, length, history, clear};
+  return {
+    getPreviousValue,
+    PreviousValue,
+    removeItem,
+    length,
+    history,
+    clear
+  };
 }
 
 export default useHistory;

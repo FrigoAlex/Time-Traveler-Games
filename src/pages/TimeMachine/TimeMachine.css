@@ -1,98 +1,98 @@
 .grid4x4 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-gap: 1rem;
-    padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 1rem;
+  padding: 1rem;
 }
 .grid-elements {
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight: 600;
-    align-content: center;
-    border-radius: 10px;
-    width: 150px;
-    height: 150px;
-    display: grid;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  align-content: center;
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+  display: grid;
 }
 .selected {
-    filter: brightness(140%);
-    scale : 110%;
-    transition: 0.3s ease-in-out;
-    }
-  .noSelected {
-     opacity: 50%;
-     transition: 0.3s ease-in-out;
-  }
+  filter: brightness(140%);
+  scale: 110%;
+  transition: 0.3s ease-in-out;
+}
+.noSelected {
+  opacity: 50%;
+  transition: 0.3s ease-in-out;
+}
 .grid-elements:nth-child(1) {
-    background: #FFD5C2;
+  background: #ffd5c2;
 }
 .grid-elements:nth-child(2) {
-    background: #F28F3B;
+  background: #f28f3b;
 }
 .grid-elements:nth-child(3) {
-    background: #C8553D;
+  background: #c8553d;
 }
 .grid-elements:nth-child(4) {
-    background: #548687;
+  background: #548687;
 }
 .grid-elements:nth-child(5) {
-    background: #C5E99B;
+  background: #c5e99b;
 }
 .grid-elements:nth-child(6) {
-    background: #CE7DA5;
+  background: #ce7da5;
 }
 .grid-elements:nth-child(7) {
-    background: #FFFC99;
+  background: #fffc99;
 }
 .grid-elements:nth-child(8) {
-    background: #8FBC94;
+  background: #8fbc94;
 }
 .grid-elements:nth-child(9) {
-    background: #C6D4FF;
+  background: #c6d4ff;
 }
 .grid-elements:nth-child(10) {
-    background: #498467;
+  background: #498467;
 }
 .grid-elements:nth-child(11) {
-    background: #EDE5A6;
+  background: #ede5a6;
 }
 .grid-elements:nth-child(12) {
-    background: #D64933;
+  background: #d64933;
 }
 .grid-elements:nth-child(13) {
-    background: #5B85AA;
+  background: #5b85aa;
 }
 .grid-elements:nth-child(14) {
-    background: #CEB992;
+  background: #ceb992;
 }
 .grid-elements:nth-child(15) {
-    background: #78C0E0;
+  background: #78c0e0;
 }
 .grid-elements:nth-child(16) {
-    background: #FFCBDD;
+  background: #ffcbdd;
 }
 @media screen and (max-width: 875px) {
-    .grid-elements {
-        width: 100px;
-        height: 100px;
-    }
+  .grid-elements {
+    width: 100px;
+    height: 100px;
+  }
 }
 @media screen and (max-width: 670px) {
-    .grid-elements {
-        width: 80px;
-        height: 80px;
-    }
-    .grid-container {
-        gap: 0 !important;
-    }
-    .grid4x4 {
-        grid-gap: 0.5rem;
-    }
+  .grid-elements {
+    width: 80px;
+    height: 80px;
+  }
+  .grid-container {
+    gap: 0 !important;
+  }
+  .grid4x4 {
+    grid-gap: 0.5rem;
+  }
 }
 @media screen and (max-width: 380px) {
-    .grid-elements {
-        width: 55px;
-        height: 55px;
-    }
+  .grid-elements {
+    width: 55px;
+    height: 55px;
+  }
 }

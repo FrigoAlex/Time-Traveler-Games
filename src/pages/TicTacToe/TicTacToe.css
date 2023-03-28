@@ -18,20 +18,20 @@
   object-fit: contain;
 }
 .result-message-container {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #fff;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 1rem;
 }
 .result-message {
-    display: flex;
+  display: flex;
 }
 .result-text {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 .grid3x3 {
   display: grid;
@@ -49,24 +49,24 @@
   display: grid;
   align-content: center;
 }
-.cell:nth-child(3n+1) {
-    border-left: none;
+.cell:nth-child(3n + 1) {
+  border-left: none;
 }
 .cell:nth-child(3n) {
-    border-right: none;
+  border-right: none;
 }
-.cell:nth-child(-n+3) {
-    border-top: none;
+.cell:nth-child(-n + 3) {
+  border-top: none;
 }
-.cell:nth-child(n+7) {
-    border-bottom: none;
+.cell:nth-child(n + 7) {
+  border-bottom: none;
 }
 .game-icon {
-    width: 80%;
-    height: 80%;
-    margin: auto;
-    object-fit: contain;
-    object-position: center;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  object-fit: contain;
+  object-position: center;
 }
 @media screen and (max-width: 710px) {
   .cell {

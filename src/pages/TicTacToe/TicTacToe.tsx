@@ -1,7 +1,7 @@
 import circle from "../../assets/svg/circle-outline.svg";
 import cross from "../../assets/svg/x-outline.svg";
 import useTicTacToe from "../../hooks/useTicTacToe";
-import { TicTacToeModes,TicTacToePlayer } from "../../types/config";
+import { TicTacToeModes, TicTacToePlayer } from "../../types/config";
 import "./TicTacToe.css";
 
 const TicTacToe = () => {
@@ -16,7 +16,7 @@ const TicTacToe = () => {
     prev,
     replay,
     reset,
-    resume,
+    resume
   } = useTicTacToe();
   return (
     <>
@@ -24,7 +24,8 @@ const TicTacToe = () => {
         <h2 className="home-title">Tic Tac Toe</h2>
         <div className="set-player">
           {(winner === undefined ||
-            (replayMode !== TicTacToeModes.PLAY && replayModeIndex !== length)) && (
+            (replayMode !== TicTacToeModes.PLAY &&
+              replayModeIndex !== length)) && (
             <>
               <div className="turn-text">Turn of:</div>
               {turn === TicTacToePlayer.XPLAYER ? (
@@ -62,7 +63,8 @@ const TicTacToe = () => {
                 className={`cell ${cell}`}
                 onClick={() =>
                   cell === "" &&
-                  !winner && replayMode === TicTacToeModes.PLAY &&
+                  !winner &&
+                  replayMode === TicTacToeModes.PLAY &&
                   setMovement({ turn, position: index })
                 }
               >
@@ -77,7 +79,8 @@ const TicTacToe = () => {
             ))}
           </div>
           <div className="menu">
-            {(replayMode === TicTacToeModes.REWIND || replayMode === TicTacToeModes.PLAY) && (
+            {(replayMode === TicTacToeModes.REWIND ||
+              replayMode === TicTacToeModes.PLAY) && (
               <>
                 <button
                   className="game-button"
