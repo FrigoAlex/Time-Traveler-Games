@@ -17,12 +17,12 @@ const App = () => {
         <Route
           path={PageRoutes.HOME}
           element={<Home />}
-          errorElement={<NoContent redirect />}
+          errorElement={<NoContent />}
         />
         <Route path={PageRoutes.TIMEMACHINE} element={<TimeMachine />} />
         <Route path={PageRoutes.TICTACTOE} element={<TicTacToe />} />
-        <Route path={PageRoutes.NO_CONTENT} element={<NoContent redirect />} />
-        <Route path="*" element={<NoContent redirect />} />
+        <Route path={PageRoutes.NO_CONTENT} element={<NoContent />} />
+        <Route path="*" element={<NoContent />} />
       </Routes>
     </Router>
   );
