@@ -11,7 +11,6 @@ export default function TimeMachine({
   prevFoo,
   nextFoo,
   resumeFoo,
-  prevItem,
   item,
   setnewItem,
 }: TimeMachineProps) {
@@ -21,12 +20,8 @@ export default function TimeMachine({
         <div className="grid4x4">
           {Array.from({ length: 16 }, (_, x) => (
             <div
-              className={`grid-elements${
-                item === x + 1
-                  ? " selected"
-                  : prevItem === x + 1
-                    ? " prevSelected"
-                    : ""
+              className={`grid-elements ${
+                item === x + 1 ? "selected" : "noSelected"
               }`}
               key={x + 1}
               onClick={() => {
